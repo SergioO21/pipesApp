@@ -8,8 +8,10 @@ import { ProductsComponent } from "./products.component";
 import {
 	BasicsPageComponent,
 	NumbersPageComponent,
+	OrderComponent,
 	UncommonPageComponent,
 } from "./pages";
+import { CanFlyPipe, ColorPipe, SortByPipe, ToggleCasePipe } from "./pipes";
 
 @NgModule({
 	declarations: [
@@ -17,6 +19,13 @@ import {
 		BasicsPageComponent,
 		NumbersPageComponent,
 		UncommonPageComponent,
+		OrderComponent,
+
+		// Pipes
+		CanFlyPipe,
+		ColorPipe,
+		SortByPipe,
+		ToggleCasePipe,
 	],
 	imports: [CommonModule, ProductsRoutingModule, PrimeNgModule],
 })

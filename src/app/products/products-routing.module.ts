@@ -2,8 +2,9 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import {
 	BasicsPageComponent,
-	UncommonPageComponent,
 	NumbersPageComponent,
+	OrderComponent,
+	UncommonPageComponent,
 } from "./pages";
 
 const routes: Routes = [
@@ -18,6 +19,10 @@ const routes: Routes = [
 	{
 		path: "uncommon",
 		component: UncommonPageComponent,
+	},
+	{
+		path: "custom",
+		component: OrderComponent,
 	},
 	{
 		path: "**",
